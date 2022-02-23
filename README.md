@@ -1,6 +1,8 @@
 # TMB_SeleniumFramework2
 This project is designed and developed with the help of -
 1. Selenium - Java with Docker, Git and Jenkins (https://www.testingminibytes.com/courses/selenium-java-with-docker-git-and-jenkins)
+2. Learnings from Course - <a href="https://drive.google.com/file/d/1x78e702MzFOoRrz_mIQSgTXmJB5MuqyA/view?usp=sharing"><b>Github_TMB_Selenium - Java with Docker, Git and Jenkins</b></a>
+
 ------------------------------------------------------------
 ![image](https://user-images.githubusercontent.com/26399692/155394468-276d8a47-8425-4d42-be05-81cc0162da64.png)
 ![image](https://user-images.githubusercontent.com/26399692/155394512-2f51ccd0-0bac-4350-9455-0b92d5cdedc6.png)
