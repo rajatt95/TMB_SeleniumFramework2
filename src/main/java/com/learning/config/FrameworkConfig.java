@@ -22,6 +22,7 @@ public interface FrameworkConfig extends Config {
     String send_email_to_users();
     String override_reports();
     String open_reports_after_execution();
+    String retry_failed_tests();
 
 //    username=rajatt95
 //    password=1234

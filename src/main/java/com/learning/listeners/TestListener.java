@@ -61,8 +61,11 @@ public class TestListener implements ITestListener, ISuiteListener {
         ExtentLogger.info(BOLD_START + IconUtils.getOSIcon() + "  &  " + IconUtils.getBrowserIcon() + " --------- "
                 + BrowserOSInfoUtils.getOS_Browser_BrowserVersionInfo() + BOLD_END);
 
-        ExtentLogger.info(ICON_Navigate_Right + "  Navigating to : " + BOLD_START +
-                ConfigFactory.getConfig().url() + BOLD_END);
+//        ExtentLogger.info(ICON_Navigate_Right + "  Navigating to : " + BOLD_START +
+//                ConfigFactory.getConfig().url() + BOLD_END);
+
+        String url=ConfigFactory.getConfig().url();
+        ExtentLogger.info(ICON_Navigate_Right + "  Navigating to : <a href=" + url + "><b>" + url + "</b></a>");
 
     }
 

@@ -19,6 +19,9 @@ public class FrameworkConstants {
     public static final String PROJECT_PATH = System.getProperty("user.dir");
 
     public static final String CHROME = "chrome";
+    public static final String CHROME_HEADLESS = "chrome_headless";
+    public static final String HEADLESS = "headless";
+
     public static final String FIREFOX = "firefox";
     public static final String EDGE = "edge";
     public static final String OPERA = "opera";

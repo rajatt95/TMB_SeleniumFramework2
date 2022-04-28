@@ -1,0 +1,9 @@
+# Project exclude paths
+/target/
+.idea
+.settings
+ExtentReports
+target
+test-output
+z_others
+ExtentReports.zip

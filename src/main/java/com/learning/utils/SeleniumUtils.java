@@ -62,15 +62,15 @@ public class SeleniumUtils {
         element.click();
 //        ExtentLogger.pass("Element: " + element.getText() + " is clicked successfully.");
         //ExtentLogger.pass(element.getText() + " is clicked successfully.", true);
-        ExtentLogger.pass("Clicking on: "+BOLD_START + element.getText() + BOLD_END , true);
+        ExtentLogger.pass("Clicking on: " + BOLD_START + element.getText() + BOLD_END, true);
 
     }
 
     public static void click(By by, WaitType waitType) {
         WebElement element = getElementAfterWait(by, waitType);
         //  ExtentLogger.pass("Element: " + BOLD_START + element.getText() + BOLD_END + " is clicked successfully");
-      //  ExtentLogger.pass(BOLD_START + element.getText() + BOLD_END + " is clicked successfully", true);
-        ExtentLogger.pass("Clicking on: "+BOLD_START + element.getText() + BOLD_END , true);
+        //  ExtentLogger.pass(BOLD_START + element.getText() + BOLD_END + " is clicked successfully", true);
+        ExtentLogger.pass("Clicking on: " + BOLD_START + element.getText() + BOLD_END, true);
         element.click();
 
     }
@@ -92,7 +92,7 @@ public class SeleniumUtils {
         WebElement element = getElementAfterWait(by, waitType);
 //        ExtentLogger.pass("Element: " + BOLD_START + elementName + BOLD_END + " is clicked successfully.");
         //ExtentLogger.pass(BOLD_START + elementName + BOLD_END + " is clicked successfully.", true);
-        ExtentLogger.pass("Clicking on: "+BOLD_START + elementName + BOLD_END , true);
+        ExtentLogger.pass("Clicking on: " + BOLD_START + elementName + BOLD_END, true);
         element.click();
 
     }
@@ -132,7 +132,9 @@ public class SeleniumUtils {
 
     public static String getWebPageURL() {
         String url = DriverManager.getDriver().getCurrentUrl();
-        ExtentLogger.info("Page URL: " + BOLD_START + url + BOLD_END);
+        //ExtentLogger.info("Page URL: " + BOLD_START + url + BOLD_END);
+        ExtentLogger.info("Page URL: " + "<a href=" + url + "><b>" + url + "</b></a>");
+
         return url;
     }
 

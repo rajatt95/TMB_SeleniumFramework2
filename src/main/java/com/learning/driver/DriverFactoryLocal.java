@@ -3,6 +3,7 @@ package com.learning.driver;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.opera.OperaDriver;
@@ -22,6 +23,12 @@ public final class DriverFactoryLocal {
         if (browser.equalsIgnoreCase(CHROME)) {
             WebDriverManager.chromedriver().setup();
             driver = new ChromeDriver();
+        }
+        else if (browser.equalsIgnoreCase(CHROME_HEADLESS)) {
+            ChromeOptions options = new ChromeOptions();
+            options.addArguments(HEADLESS);
+            WebDriverManager.chromedriver().setup();
+            driver = new ChromeDriver(options);
         } else if (browser.equalsIgnoreCase(FIREFOX)) {
             WebDriverManager.firefoxdriver().setup();
             driver = new FirefoxDriver();
