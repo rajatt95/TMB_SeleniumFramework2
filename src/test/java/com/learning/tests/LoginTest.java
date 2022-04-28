@@ -1,10 +1,14 @@
+/**
+ * @author Rajat Verma
+ * https://www.linkedin.com/in/rajat-v-3b0685128/
+ * https://github.com/rajatt95
+ * https://rajatt95.github.io/
+ *
+ * Course: Selenium - Java with Docker, Git and Jenkins (https://www.testingminibytes.com/courses/selenium-java-with-docker-git-and-jenkins/)
+ * Tutor: Amuthan Sakthivel (https://www.testingminibytes.com/)
+ */
+
 package com.learning.tests;
-
-import static com.learning.constants.FrameworkConstants.ASSERTION_FOR;
-
-import org.openqa.selenium.By;
-import org.testng.Assert;
-import org.testng.annotations.Test;
 
 import com.learning.annotations.FrameworkAnnotation;
 import com.learning.driver.DriverManager;
@@ -14,6 +18,11 @@ import com.learning.pages.LoginPage;
 import com.learning.testdata.TestData;
 import com.learning.utils.DataProviderUtils;
 import com.learning.utils.VerificationUtils;
+import org.openqa.selenium.By;
+import org.testng.Assert;
+import org.testng.annotations.Test;
+
+import static com.learning.constants.FrameworkConstants.ASSERTION_FOR;
 
 public class LoginTest extends BaseTest {
 

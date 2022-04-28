@@ -1,3 +1,13 @@
+/**
+ * @author Rajat Verma
+ * https://www.linkedin.com/in/rajat-v-3b0685128/
+ * https://github.com/rajatt95
+ * https://rajatt95.github.io/
+ *
+ * Course: Selenium - Java with Docker, Git and Jenkins (https://www.testingminibytes.com/courses/selenium-java-with-docker-git-and-jenkins/)
+ * Tutor: Amuthan Sakthivel (https://www.testingminibytes.com/)
+ */
+
 package com.learning.config;
 
 import org.aeonbits.owner.Config;
@@ -22,6 +32,7 @@ public interface FrameworkConfig extends Config {
     String send_email_to_users();
     String override_reports();
     String open_reports_after_execution();
+    String retry_failed_tests();
 
 //    username=rajatt95
 //    password=1234

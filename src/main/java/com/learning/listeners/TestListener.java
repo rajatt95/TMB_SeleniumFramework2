@@ -1,3 +1,13 @@
+/**
+ * @author Rajat Verma
+ * https://www.linkedin.com/in/rajat-v-3b0685128/
+ * https://github.com/rajatt95
+ * https://rajatt95.github.io/
+ *
+ * Course: Selenium - Java with Docker, Git and Jenkins (https://www.testingminibytes.com/courses/selenium-java-with-docker-git-and-jenkins/)
+ * Tutor: Amuthan Sakthivel (https://www.testingminibytes.com/)
+ */
+
 package com.learning.listeners;
 
 
@@ -61,8 +71,11 @@ public class TestListener implements ITestListener, ISuiteListener {
         ExtentLogger.info(BOLD_START + IconUtils.getOSIcon() + "  &  " + IconUtils.getBrowserIcon() + " --------- "
                 + BrowserOSInfoUtils.getOS_Browser_BrowserVersionInfo() + BOLD_END);
 
-        ExtentLogger.info(ICON_Navigate_Right + "  Navigating to : " + BOLD_START +
-                ConfigFactory.getConfig().url() + BOLD_END);
+//        ExtentLogger.info(ICON_Navigate_Right + "  Navigating to : " + BOLD_START +
+//                ConfigFactory.getConfig().url() + BOLD_END);
+
+        String url=ConfigFactory.getConfig().url();
+        ExtentLogger.info(ICON_Navigate_Right + "  Navigating to : <a href=" + url + "><b>" + url + "</b></a>");
 
     }
 

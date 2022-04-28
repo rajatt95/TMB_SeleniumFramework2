@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<!--<suite name="TMB_SeleniumFramework - UI Automation Test Suite" thread-count="6" data-provider-thread-count="2">-->
+<suite name="TMB_SeleniumFramework - UI Automation Test Suite" data-provider-thread-count="1">
+
+    <listeners>
+        <listener class-name="com.learning.listeners.TestListener"></listener>
+        <listener class-name="com.learning.listeners.MethodInterceptor"></listener>
+    </listeners>
+    <!--    <test parallel="methods" thread-count="2" name="TMB_SeleniumFramework - Test">-->
+    <test name="TMB_SeleniumFramework - Test">
+        <packages>
+            <package name="com.learning.tests"></package>
+        </packages>
+    </test>
+</suite>
